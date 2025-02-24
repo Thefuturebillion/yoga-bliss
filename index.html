@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Bliss</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #A8C686, #C3B1E1);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+        
+        header {
+            background-color: black;
+            color: #FFD700;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            margin: 25px auto;
+            width: 80%;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        header:hover {
+            background-color: #1B5E20;
+            transform: scale(1.07);
+        }
+
+        section {
+            background-color: black;
+            padding: 25px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-buttons {
+            background: linear-gradient(135deg, #1B5E20, #145A32);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            width: 80%;
+            margin: 25px auto;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-buttons:hover {
+            background: linear-gradient(135deg, #145A32, #0D3D1B);
+            transform: scale(1.05);
+        }
+
+        .contact-buttons h2 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #FFD700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .contact-buttons a {
+            display: inline-block;
+            margin: 12px;
+            padding: 14px 24px;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            background-color: #0068FF;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-buttons a:hover {
+            background-color: #004CBA;
+            transform: scale(1.15);
+        }
+
+        footer {
+            background-color: black;
+            padding: 18px;
+            margin-top: 25px;
+            font-size: 16px;
+            color: #FFD700;
+            border-radius: 12px;
+            width: 80%;
+            margin: 25px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        footer:hover {
+            background-color: #1B5E20;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">WELCOME TO LAM YOGA</h1>
+    
+    <header id="header">Find Your Inner Peace and Strength</header>
+
+    <section>Experience the perfect balance of mind, body, and soul through yoga 🧘‍♀️</section>
+    <section>Join our guided sessions for deep relaxation, improved flexibility, and mental clarity 🌿</section>
+    <section>Discover the art of breathing, movement, and mindfulness to enhance your overall well-being ✨</section>
+    
+    <section class="contact-buttons">
+        <h2>Contact Us for More Information</h2>
+        <a href="#" target="_blank">📞 Call Us for Class Schedules</a>
+        <a href="#" class="messenger" target="_blank">💬 Chat with Our Yoga Experts</a>
+    </section>
+
+    <footer>© 2025 Yoga Bliss - Your Journey to Inner Harmony</footer>
+
+    <script>
+        gsap.from("#title", { duration: 1.5, y: -50, opacity: 0, ease: "bounce" });
+        gsap.from("header", { duration: 1, x: -100, opacity: 0, ease: "power2.out" });
+        gsap.from("section", { duration: 1, scale: 0.8, opacity: 0, stagger: 0.3, ease: "power2.out" });
+        gsap.from(".contact-buttons", { duration: 1, y: 50, opacity: 0, ease: "power2.out" });
+    </script>
+</body>
+</html>
